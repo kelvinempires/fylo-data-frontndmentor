@@ -1,0 +1,133 @@
+body {
+  background-color: hsl(229, 57%, 11%);
+  position: relative;
+  background-image: url(./images/bg-desktop.png);
+  background-position-y: top 250px;
+  background-repeat: no-repeat;
+}
+main {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  position: fixed;
+  right: 17%;
+  bottom: 40%;
+}
+.right {
+  padding-left: 40px;
+  padding-top: 40px;
+  background-color: hsl(228, 56%, 26%);
+  height: 150px;
+  width: 300px;
+  border-radius: 10px 100px 10px 10px;
+}
+.left {
+  background-color: hsl(228, 56%, 26%);
+  width: 450px;
+  border-radius: 10px;
+  margin-top: 35.2px;
+  color: white;
+  padding: 25px;
+}
+.gb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  height: 60px;
+  position: fixed;
+  top: 160px;
+  right: 260px;
+  width: 150px;
+  border-radius: 10px 10px 0px 10px;
+}
+.gb-right {
+  color: hsl(229, 57%, 11%);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 30px;
+  font-style: normal;
+}
+.gb-left {
+  color: hsla(228, 56%, 26%, 0.701);
+  font-size: smaller;
+  text-transform: uppercase;
+}
+.span1 {
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+.p1 {
+  color: rgba(255, 255, 255, 0.541);
+}
+.mb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon {
+  display: flex;
+  gap: 5px;
+}
+.no1 {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(229, 57%, 11%);
+  padding: 10px;
+  margin: 20px 10px 0px 0px;
+  border-radius: 5px;
+  width: 30px;
+  align-items: center;
+}
+footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+/* mobile screen size */
+@media (min-width: 320px) and (max-width: 725px) {
+  body{
+  position: relative;
+  background-image: url(./images/bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  }
+  main {
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    right: 0%;
+    bottom: 0%;
+  }
+  .right {
+  width: 250px;
+  position: center;
+  margin: 0%;
+}
+.left {
+  width: 250px;
+  margin: 0%;
+}
+.gb{
+  position: absolute;
+  top: 450px;
+  right: 120px;
+  border-radius: 10px;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 35px 10px 10px;
+}
+}
+/* Mobile: 375px
+- Desktop: 1440px */
